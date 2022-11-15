@@ -7,7 +7,8 @@ int *count(char *s) {
     int *x = calloc(26, sizeof(int));
     for(int i = 0; i < strlen(s); i++) {
         if(isblank(s[i])) continue;
-        x[toupper(s[i])-'A']++;
+        if(isalpha(s[i]))
+            x[toupper(s[i])-'A']++;
     }
     return x;
 }
@@ -15,9 +16,14 @@ int *count(char *s) {
 int check(char *a, char *b) {
     int *x_a = count(a), *x_b = count(b);
     for(int i = 0; i < 26; i++) {
-        if(x_a[i] != x_b[i])
+        if(x_a[i] != x_b[i]) {
+            free(x_a);
+            free(x_b);
             return 0;
+        }
     }
+    free(x_a);
+    free(x_b);
     return 1;
 }
 

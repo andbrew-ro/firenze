@@ -14,8 +14,8 @@ $ sudo cp firenze /usr/local/bin/
 ## Usage
 
 ```bash
-$ firenze "New York Times" "monkeys write"
-"monkeys write" IS an anagram of "New York Times"
+$ firenze "O, Draconian devil" "Leonardo Da Vinci"
+"Leonardo Da Vinci" IS an anagram of "O, Draconian devil"
 ```
 
-Could you find any other anagram?
+[Could you find any other anagram?](https://github.com/andbrew-ro/new-york)

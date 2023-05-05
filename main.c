@@ -33,8 +33,8 @@ int main(int argc, char **argv) {
         exit(1);
     }
     if(check(argv[1], argv[2])) 
-        printf("\"%s\" IS an anagram of \"%s\"\n", argv[2], argv[1]);
+        printf("\"%s\" IS anagram of \"%s\"\n", argv[2], argv[1]);
     else
-        printf("\"%s\" is NOT an anagram of \"%s\"\n", argv[2], argv[1]);
+        printf("\"%s\" is NOT anagram of \"%s\"\n", argv[2], argv[1]);
     return 0;
 }

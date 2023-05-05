@@ -15,7 +15,7 @@ $ sudo cp firenze /usr/local/bin/
 
 ```bash
 $ firenze "O, Draconian devil" "Leonardo Da Vinci"
-"Leonardo Da Vinci" IS an anagram of "O, Draconian devil"
+"Leonardo Da Vinci" IS anagram of "O, Draconian devil"
 ```
 
 [Could you find any other anagram?](https://github.com/andbrew-ro/new-york)
